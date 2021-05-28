@@ -13,12 +13,11 @@ and a decoy server called honeypot will be employed. It will help to capture the
 well as a weak secured system in the network.
 
 
-# Tools Used
-1. Snort (Intrusion Detection System)
-2. Tshark (Packet Analyzer)
-3. Cowrie (Honeypot)
-4. Barnyard2
-5. Pulledpork
-6. Nmap (Network Scanner)
+# Requirements
+1. [Snort](https://www.snort.org/downloads) 
+2. Tshark 
+3. [Cowrie](https://github.com/cowrie/cowrie) 
+4. [Barnyard2](https://github.com/firnsy/barnyard2)
+5. [Pulledpork](https://github.com/shirkdog/pulledpork)
+6. nmap
 7. Hydra
-8. Remmina (To access Raspberry pi through RDP)
