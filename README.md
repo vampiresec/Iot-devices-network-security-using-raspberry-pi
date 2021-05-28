@@ -21,3 +21,9 @@ well as a weak secured system in the network.
 5. [Pulledpork](https://github.com/shirkdog/pulledpork)
 6. nmap
 7. Hydra
+
+### Snort commands
+1. Show snort icmp rule
+ * commnad : sudo cat /etc/snort/my-icmp.rules
+2. Show snort config
+ * command : sudo cat /etc/snort/snort.conf
