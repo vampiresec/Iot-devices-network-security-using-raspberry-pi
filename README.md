@@ -23,10 +23,11 @@ well as a weak secured system in the network.
 6. nmap
 7. Hydra
 
+# Configuration
 ### Tshark
     sudo tshark
 ### Snort commands
-    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
+    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i *inteface*
 
 ### Cowrie
 ```
@@ -51,7 +52,7 @@ pip install --upgrade -r requirements.txt
 nano etc/cowrie.cfg
 ```
 ```
-  \[telnet\]
+  [telnet]
   enabled = true
 ```
 ```
@@ -69,4 +70,14 @@ Or for telnet:
 ```
 sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 2223
 ```
-
+# Testing
+* Cowrie
+    test the honeyport by bruteforcing the telnet service
+    ```
+    brute-force telnet service with command hydra -l pi -P worldlist -s 2223 raspberry_pi_ip telnet
+    ```
+* Snort
+    ping raspberrypi
+    ```
+    ping raspberry_pi_ip
+    ```
