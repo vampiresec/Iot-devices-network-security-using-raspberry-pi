@@ -14,9 +14,6 @@ well as a weak secured system in the network.
 
 
 # Tools Used
-* 
-
-
-
-
-#  Commands
+* Snort (Intrusion setection system)
+* Cowrie (Honeypot)
+* Tshark
