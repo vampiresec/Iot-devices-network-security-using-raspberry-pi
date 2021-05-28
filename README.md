@@ -14,6 +14,7 @@ well as a weak secured system in the network.
 
 
 # Requirements
+
 1. [Snort](https://www.snort.org/downloads) 
 2. Tshark 
 3. [Cowrie](https://github.com/cowrie/cowrie) 
@@ -23,7 +24,16 @@ well as a weak secured system in the network.
 7. Hydra
 
 ### Snort commands
-1. sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i <interface>
+1. sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
 
 ### Cowrie
-1.  sudo adduser --disabled-password cowrie
+1. sudo adduser --disabled-password cowrie
+2. sudo su - cowrie
+3. git clone http://github.com/cowrie/cowrie
+4. cd cowrie
+5. source cowrie-env/bin/activate
+6. pip install --upgrade pip
+7. pip install --upgrade -r requirements.txt
+8. nano etc/cowrie.cfg
+  [telnet]
+  enabled = true
