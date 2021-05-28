@@ -27,7 +27,7 @@ well as a weak secured system in the network.
 ### Tshark
     sudo tshark
 ### Snort commands
-    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i ***inteface***
+    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i ___inteface___
 
 ### Cowrie
 ```
