@@ -24,6 +24,6 @@ well as a weak secured system in the network.
 
 ### Snort commands
 1. Show snort icmp rule
- * commnad : sudo cat /etc/snort/my-icmp.rules
+..* commnad : sudo cat /etc/snort/my-icmp.rules
 2. Show snort config
- * command : sudo cat /etc/snort/snort.conf
+..* command : sudo cat /etc/snort/snort.conf
