@@ -1,5 +1,5 @@
 # Iot-devices-network-security-using-raspberry-pi
-    IoT makes ordinary items' smart 'by allowing them, without needing any human
+IoT makes ordinary items' smart 'by allowing them, without needing any human
 interference, to relay data and automate tasks. An IoT device may be as basic as a portable
 health monitoring device, or as difficult as a smart city with sensors in all its regions. Due
 to IoT a huge data is transferred over the internet. Cyber-crime and attacks are on the rise
@@ -24,16 +24,16 @@ well as a weak secured system in the network.
 7. Hydra
 
 ### Snort commands
-1. sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
+    1. sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
 
 ### Cowrie
-1. sudo adduser --disabled-password cowrie
-2. sudo su - cowrie
-3. git clone http://github.com/cowrie/cowrie
-4. cd cowrie
-5. source cowrie-env/bin/activate
-6. pip install --upgrade pip
-7. pip install --upgrade -r requirements.txt
-8. nano etc/cowrie.cfg
-   \[telnet\]
-  enabled = true
+    1. sudo adduser --disabled-password cowrie
+    2. sudo su - cowrie
+    3. git clone http://github.com/cowrie/cowrie
+    4. cd cowrie
+    5. source cowrie-env/bin/activate
+    6. pip install --upgrade pip
+    7. pip install --upgrade -r requirements.txt
+    8. nano etc/cowrie.cfg
+       \[telnet\]
+      enabled = true
