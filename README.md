@@ -27,10 +27,30 @@ well as a weak secured system in the network.
     sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
 
 ### Cowrie
-    sudo adduser --disabled-password cowrie<br>
+'''
+sudo adduser --disabled-password cowrie<br>
+
+'''
+'''
+sudo adduser --disabled-password cowrie<br>
+'''
+
+'''
+
+'''
+
+'''
+
+'''
+
+'''
+
+'''
+
+
+    
     
     sudo su - cowrie
-
     git clone http://github.com/cowrie/cowrie
 4. cd cowrie
 5. source cowrie-env/bin/activate
