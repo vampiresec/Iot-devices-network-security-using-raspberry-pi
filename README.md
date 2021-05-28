@@ -27,7 +27,7 @@ well as a weak secured system in the network.
 ### Tshark
     sudo tshark
 ### Snort commands
-    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i __inteface__
+    sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i <inteface>
 
 ### Cowrie
 ```
@@ -74,10 +74,10 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 2223
 * Cowrie
     test the honeyport by bruteforcing the telnet service
     ```
-    brute-force telnet service with command hydra -l pi -P worldlist -s 2223 raspberry_pi_ip telnet
+    brute-force telnet service with command hydra -l pi -P worldlist -s 2223 <raspberry_pi_ip> telnet
     ```
 * Snort
     ping raspberrypi
     ```
-    ping raspberry_pi_ip
+    ping <raspberry_pi_ip>
     ```
