@@ -27,35 +27,34 @@ well as a weak secured system in the network.
     sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
 
 ### Cowrie
-'''
-sudo adduser --disabled-password cowrie<br>
-
-'''
-'''
-sudo adduser --disabled-password cowrie<br>
-'''
-
-'''
-
-'''
-
-'''
-
-'''
-
-'''
-
-'''
-
-
-    
-    
-    sudo su - cowrie
-    git clone http://github.com/cowrie/cowrie
-4. cd cowrie
-5. source cowrie-env/bin/activate
-6. pip install --upgrade pip
-7. pip install --upgrade -r requirements.txt
-8. nano etc/cowrie.cfg
-   \[telnet\]
+```
+sudo adduser --disabled-password cowrie
+```
+```
+sudo su - cowrie
+```
+```
+cd cowrie
+```
+```
+source cowrie-env/bin/activate
+```
+```
+pip install --upgrade pip
+```
+```
+pip install --upgrade -r requirements.txt
+```
+```
+nano etc/cowrie.cfg
+```
+```
+  \[telnet\]
   enabled = true
+```
+```
+bin/cowrie start
+```
+
+Port redirection commands are system-wide and need to be executed as root. A firewall redirect can make your existing SSH server unreachable, remember to move the existing server to a different 
+
