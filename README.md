@@ -23,6 +23,8 @@ well as a weak secured system in the network.
 6. nmap
 7. Hydra
 
+### Tshark
+    sudo tshark
 ### Snort commands
     sudo snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i inteface
 
@@ -57,4 +59,14 @@ bin/cowrie start
 ```
 
 Port redirection commands are system-wide and need to be executed as root. A firewall redirect can make your existing SSH server unreachable, remember to move the existing server to a different 
+
+The following firewall rule will forward incoming traffic on port 22 to port 2222 on Linux:
+
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222
+```
+Or for telnet:
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 2223
+```
 
