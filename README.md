@@ -14,6 +14,11 @@ well as a weak secured system in the network.
 
 
 # Tools Used
-* Snort (Intrusion setection system)
-* Cowrie (Honeypot)
-* Tshark
+1. Snort (Intrusion Detection System)
+2. Tshark (Packet Analyzer)
+3. Cowrie (Honeypot)
+4. Barnyard2
+5. Pulledpork
+6. Nmap (Network Scanner)
+7. Hydra
+8. Remmina (To access Raspberry pi through RDP)
