@@ -71,12 +71,12 @@ Or for telnet:
 sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 2223
 ```
 # Testing
-* Cowrie
+* Cowrie<br>
     test the honeyport by bruteforcing the telnet service
     ```
     brute-force telnet service with command hydra -l pi -P worldlist -s 2223 <raspberry_pi_ip> telnet
     ```
-* Snort
+* Snort<br>
     ping raspberrypi
     ```
     ping <raspberry_pi_ip>
