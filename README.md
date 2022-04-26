@@ -74,7 +74,7 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 23 -j REDIRECT --to-port 2223
 * Cowrie<br>
     test the honeyport by bruteforcing the telnet service
     ```
-    brute-force telnet service with command hydra -l pi -P worldlist -s 2223 <raspberry_pi_ip> telnet
+    brute-force telnet service with command hydra -l pi -P wordlist -s 2223 <raspberry_pi_ip> telnet
     ```
 * Snort<br>
     ping raspberrypi
